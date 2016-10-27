@@ -16,28 +16,28 @@
 		 		</ul>	 			
 		 	</nav>
 		 	<div class="logo">
-		 		<a >
+		 		<a>
 		 			<img src="http://placehold.it/150x100" width="100" height="100" alt="sedona logo">
 		 		</a>
 		 	</div>
-		 </header>
-	 	 <div class="promo">
+		</header>
+	 	<div class="promo">
 			<img src="http://placehold.it/150x100" width="1200" height="300" alt="sedona mountains">
-		 </div>
+		</div>
 		<article class="reasons">
 			<h1 class="reasons-title">Седона-небольшой городок вАризоне,заслуживающий большего!</h1> 		
 			<p class="reasons-description">Рассмотрим 5 причин,по которым Седона круче, чем Гранд каньон!</p>
 			<div class="reason-row reason-row-blue">
-				<div class="reason ">
+				<div class="reason">
 					<h2 class="reason-title">Настоящий городок</h2>
 					<div class="reason-number">-№1-</div>
 					<p class="reason-description">Седона - не аттракцион для туристов, там течет своя жизнь. </p>
 				</div>
-				<div class="reason-image">
+				<div class="reason reason-image">
 					<img src="http://placehold.it/150x100" width="500" height="200" alt="Седона">
 				</div>
 			</div>
-			<div class="reason-row reason-row--grey">
+			<div class="reason-row">
 				<div class="reason reason-icon reason-icon--hotel">
 					<h2 class="reason-title">Жилье</h2>
 					<p class="reason-description">Рекомендуем пожить в настоящем мотеле,все как в кино!</p>
@@ -52,7 +52,7 @@
 				</div>
 			</div>
 			<div class="reason-row reason-row--blue">
-				<div class="reason-image">
+				<div class="reason reason-image">
 					<img src="http://placehold.it/150x100" width="500" height="200" alt="Мост дьявола">
 				</div>
 				<div class="reason">
@@ -79,38 +79,48 @@
 				</div>	
 			</div>
 		</article>
-			<div class="hotel-search">
-				<h3 class="search-title">Заинтересовались?</h3>
-				<p class="search-description">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-				<button class="search-btn" type="button">Поиск гостиницы в Седоне</button>
-				<div class="map-content">
-					<div class="map">
-						<img src="http://placehold.it/150x100" width="1200" height="300" alt="map">
-					</div>
-					<div class="form">
-						<form action="#" method="post">
+		<div class="hotel-search">
+			<h3 class="search-title">Заинтересовались?</h3>
+			<p class="search-description">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+			<a class="search-btn" href="#">Поиск гостиницы в Седоне</a>
+			<div class="map-content">
+				<div class="map">
+					<img src="http://placehold.it/150x100" width="1200" height="300" alt="map">
+				</div>
+				<div class="form">
+					<form action="#" method="post">
+					<div class="search-wrap">
 						<label for="check-in-date">Дата заезда</label>
-						<input id="check-in-date" type="text" name="date" placeholder="24 апреля 2016"><br>
+						<input id="check-in-date" type="text" name="date" placeholder="24 апреля 2016">
+						<button class="calendar"></button>
+					</div>
+					<div class="search-wrap">
 						<label for="check-out-date">Дата выезда</label>
-						<input id="check-out-date" type="text" name="date" placeholder="4 июля 2016"><br>
+						<input id="check-out-date" type="text" name="date" placeholder="4 июля 2016">
+						<button class="calendar"></button>
+					</div>
+					<div class="search-wrap">
 						<label for="adults">Взрослые</label>
-						<input id="adults" type="text" name="number" placeholder="2"><br>
+						<input id="adults" type="text" name="number" value="2">
+					</div>
+					<div class="search-wrap">
 						<label for="children">Дети</label>
-						<input id="children" type="text" name="number" placeholder="0"><br>
-						<button type="submit" value="найти">Найти</button>
-					</form>
-					<footer class="main-footer">
-						<div class="hashtag"><a href="#">#visitsedona</a></div>
-						<div class="social-btns">
-							<a class="social-btn social-btn-twitter" href="#">Twitter</a>
-							<a class="social-btn social-btn-facebook" href="#">Facebook</a>
-							<a class="social-btn social-youtube" href="#">Youtube</a>
-						</div>
-						<div class="footer-copyright">
+						<input id="children" type="text" name="number" value="0">
+					</div>
+					<button type="submit">Найти</button>
+				</form>
+				<footer class="main-footer">
+					<div class="hashtag"><a href="#">#visitsedona</a></div>
+					<div class="social-btns">
+						<a class="social-btn social-btn-twitter" href="#">Twitter</a>
+						<a class="social-btn social-btn-facebook" href="#">Facebook</a>
+						<a class="social-btn social-youtube" href="#">Youtube</a>
+					</div>
+					<div class="footer-copyright">
 						Website by
 						<a href="https://htmlacademy.ru"></a>
-						</div>
-					</footer>
+					</div>
+				</footer>
 				</div>
 			</div>
 		</div>
