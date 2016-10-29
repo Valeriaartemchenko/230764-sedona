@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   	<div class="wrapper">
@@ -17,24 +18,24 @@
 		 	</nav>
 		 	<div class="logo">
 		 		<a>
-		 			<img src="http://placehold.it/150x100" width="100" height="100" alt="sedona logo">
+		 			<img src="img/logo/logo.png" width="137" height="70" alt="sedona logo">
 		 		</a>
 		 	</div>
 		</header>
 	 	<div class="promo">
-			<img src="http://placehold.it/150x100" width="1200" height="300" alt="sedona mountains">
+			<img src="img/logo/promo.png" width="460" height="350" alt="sedona mountains">
 		</div>
 		<article class="reasons">
-			<h1 class="reasons-title">Седона-небольшой городок вАризоне,заслуживающий большего!</h1> 		
+			<h1 class="reasons-title">Седона-небольшой городок в Аризоне,заслуживающий большего!</h1> 		
 			<p class="reasons-description">Рассмотрим 5 причин,по которым Седона круче, чем Гранд каньон!</p>
 			<div class="reason-row reason-row-blue">
 				<div class="reason">
-					<h2 class="reason-title">Настоящий городок</h2>
+					<h2 class="reason-title reason-title-white">Настоящий городок</h2>
 					<div class="reason-number">-№1-</div>
 					<p class="reason-description">Седона - не аттракцион для туристов, там течет своя жизнь. </p>
 				</div>
 				<div class="reason reason-image">
-					<img src="http://placehold.it/150x100" width="500" height="200" alt="Седона">
+					<img src="img/content/photo-1.jpg" width="800" height="255" alt="Седона">
 				</div>
 			</div>
 			<div class="reason-row">
@@ -53,10 +54,10 @@
 			</div>
 			<div class="reason-row reason-row--blue">
 				<div class="reason reason-image">
-					<img src="http://placehold.it/150x100" width="500" height="200" alt="Мост дьявола">
+					<img src="img/content/photo-2.jpg" width="800" height="255" alt="Мост дьявола">
 				</div>
 				<div class="reason">
-					<h2 class="reason-title">Там есть мост дьявола</h2>
+					<h2 class="reason-title reason-title-white">Там есть мост дьявола</h2>
 					<div class="reason-number">-№2-</div>
 					<p class="reason-description">Да,по нему можно пройти! Если конечно вы осмелитесь.</p>
 				</div>
@@ -82,30 +83,34 @@
 		<div class="hotel-search">
 			<h3 class="search-title">Заинтересовались?</h3>
 			<p class="search-description">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-			<a class="search-btn" href="#">Поиск гостиницы в Седоне</a>
+			<button class="search-btn" type="button">Поиск гостиницы в Седоне</button>
 			<div class="map-content">
 				<div class="map">
-					<img src="http://placehold.it/150x100" width="1200" height="300" alt="map">
+					<img src="img/content/map.jpg" width="1200" height="475" alt="map">
 				</div>
 				<div class="form">
 					<form action="#" method="post">
 					<div class="search-wrap">
 						<label for="check-in-date">Дата заезда</label>
 						<input id="check-in-date" type="text" name="date" placeholder="24 апреля 2016">
-						<button class="calendar"></button>
+						<button class="calendar type="button" "></button>
 					</div>
 					<div class="search-wrap">
 						<label for="check-out-date">Дата выезда</label>
 						<input id="check-out-date" type="text" name="date" placeholder="4 июля 2016">
-						<button class="calendar"></button>
+						<button class="calendar" type="button"></button>
 					</div>
 					<div class="search-wrap">
 						<label for="adults">Взрослые</label>
+						<button class="minus" type="button"></button>
 						<input id="adults" type="text" name="number" value="2">
+						<button class="plus" type="button"></button>
 					</div>
 					<div class="search-wrap">
 						<label for="children">Дети</label>
+						<button class="minus" type="button"></button>
 						<input id="children" type="text" name="number" value="0">
+						<button class="plus" type="button"></button>
 					</div>
 					<button type="submit">Найти</button>
 				</form>
@@ -118,7 +123,9 @@
 					</div>
 					<div class="footer-copyright">
 						Website by
-						<a href="https://htmlacademy.ru"></a>
+						<a href="https://htmlacademy.ru">
+							<img src="img/logo/academy-logo.png">
+						</a>
 					</div>
 				</footer>
 				</div>

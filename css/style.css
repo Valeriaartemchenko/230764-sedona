@@ -1,0 +1,28 @@
+body {
+	font-family: "PT Sans","Arial",serif;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: normal; 
+	color: #000000;
+}
+
+.reasons-title, .reason-title {
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.search-title {
+	font-size: 30px;
+	line-height: 24px;
+}
+
+.hotel-title, .found-title {
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.filter-name {
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: bold;
+}
