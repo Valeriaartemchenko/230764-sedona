@@ -1,14 +1,23 @@
 body {
+
 	font-family: "PT Sans","Arial",serif;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: normal; 
+	text-transform: uppercase;
 	color: #000000;
+	text-align: center;
 }
 
 .reasons-title, .reason-title {
 	font-size: 21px;
 	font-weight: bold;
+	
+}
+
+.reasons-description,.reason-description {
+	font-size: 14px;
+	line-height: 26px;
 }
 
 .search-title {
@@ -25,4 +34,165 @@ body {
 	font-size: 16px;
 	line-height: 21px;
 	font-weight: bold;
+}
+
+
+/*Сетка*/
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.wrapper {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+/*Шапка*/
+.main-header {
+	padding-left: 72px;
+	padding-right: 72px;
+	position: relative;
+	outline: 3px solid yellow;
+}
+
+ul {
+	padding: 0 0;
+	margin:0 0;
+}
+.menu-left {
+	width: 20%;
+	min-height:55px;
+	float: left;
+	outline: 1px solid green;
+}
+
+.menu-right {
+	width: 20%;
+	min-height:55px;
+	float: right;
+	outline: 1px solid green;
+}
+
+.logo {
+	height: 70px;
+	position: absolute;
+	left: 531px;
+	top: 0px;
+	outline: 1px solid green;
+}
+/* промо-текст на фоне гор*/
+.promo {
+	min-height: 510px;
+	width:100%;
+	box-sizing: border-box;
+	padding-top:77px;
+	margin-bottom: 60px;
+	background-image: url("../img/background/background.jpg");
+	background-repeat: no-repeat;
+}
+
+.promo-text {
+	width: 458px;
+	margin:0 auto;
+	outline: 3px solid green;
+}
+/* общая высота-ширина */
+.reason-row {
+	min-height: 255px;
+}
+.reason {
+	width:400px;
+	float: left;
+}
+
+.reasons-description {
+	margin-bottom: 60px;
+}
+
+.reason-row--blue {
+	background-color: #81b3d2;
+}
+
+}
+.reason-to-left {
+	float: left;
+}
+
+.reason-to-right {
+	float: right;
+}
+.reason-image {
+	height: 255px;
+	width:800px;
+}
+
+/* */
+.reason-row--white {
+	min-height: 330px;
+	background-color: #ffffff;
+}
+/* */
+.reason-row--grey {
+	background-color: #eeeeee;
+	margin-bottom: 60px
+}
+/* */
+.hotel-search {
+	background-color: #ffffff;
+
+}
+
+.search-description {
+	margin-bottom: 40px;
+}
+.search-btn {
+	width: 568px;
+	height: 87px;
+	background-color: #766357;
+	margin:0 auto;
+}
+
+.map-content{
+	position: relative;
+}
+
+.form {
+	width: 568px;
+	min-height: 395px;
+	background-color: #ffffff;
+	position: absolute;
+	top:0;
+	left:316px;
+}
+
+.main-footer {
+	width: 1200px;
+	min-height: 120px;
+	box-sizing: border-box;
+	padding-left: 72px;
+	padding-right: 72px;
+	background-color: rgba(255,255,255,0.9);
+	position: absolute;
+	bottom: 0px;
+	left:0px;
+}
+
+.hashtag {
+	width: 240px;
+	float: left;
+}
+
+.social-btns {
+	width: 150px;
+	margin-left: 212px;
+	margin-left: 212px;
+	float: left;
+}
+
+.footer-copyright {
+	width: 240px;
+	float: right;
 }
