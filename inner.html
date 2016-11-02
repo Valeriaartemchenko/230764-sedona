@@ -7,13 +7,13 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<header class="main-header clearfix">
+			<header class="main-header">
 				<nav class="main-navigation">
-					<ul>
-						<li><a href=#>Информация</a></li>
-						<li><a href=#>Фото и видео</a></li>
-						<li><a href=#>Карта штата</a></li>
-						<li><a class="active">Гостиницы</a></li>
+					<ul class="clearfix">
+						<li class="menu-left"><a href=#>Информация</a></li>
+						<li class="menu-left"><a href=#>Фото и видео</a></li>
+						<li class="menu-right"><a class="active">Гостиницы</a></li>
+						<li class="menu-right"><a href=#>Карта штата</a></li>
 					</ul>
 				</nav>
 				<div class="logo">
@@ -23,7 +23,7 @@
 					</a>
 				</div>
 			</header>
-			<div class="filters">
+			<div class="filters clearfix">
 				<form action="#" method="post">
 					<div class="filter-colomn">
 						<div class="filter-name">Инфраструктура</div>
@@ -42,37 +42,37 @@
 					</div>
 					<div class="filter-colomn">
 						<div class="filter-name">Тип жилья</div>
-							<div class="filter-point">
-								<input id="hotel" type="checkbox" name="hotel" checked>
-								<label for="hotel">Гостиница</label>
-							</div>
-							<div class="filter-point">
-								<input id="motel" type="checkbox" name="motel" checked>
-								<label for="motel">Мотель</label>
-							</div>
-							<div class="filter-point">
-								<input id="apptm" type="checkbox" name="appartments" checked>
-								<label for="apptm">Апартаменты</label>
-							</div>
+						<div class="filter-point">
+							<input id="hotel" type="checkbox" name="hotel" checked>
+<							<label for="hotel">Гостиница</label>
+						</div>
+						<div class="filter-point">
+							<input id="motel" type="checkbox" name="motel" checked>
+							<label for="motel">Мотель</label>
+						</div>
+						<div class="filter-point">
+							<input id="apptm" type="checkbox" name="appartments" checked>
+							<label for="apptm">Апартаменты</label>
 						</div>
 					</div>
 					<button class="btn" type="submit">Показать</button>
 				</form>
 			</div>
-			<div class="found">
+			<div class="found clearfix">
 				<div class="found-title">Найдено:3</div>
-				<ul>
+				<ul class="sort">
 					<li class="sort">Сортировка:</li>
 					<li><a class="active">По цене</a></li>
 					<li><a href="#">По типу</a></li>
 					<li><a href="#">По рейтингу</a></li>
 				</ul>
+				<div class="arrows">
+					<a class="up" href="#">up</a>
+					<a class="down active" >down</a>
+				</div>
 			</div>
-			<div class="arrows">
-				<a class="up" href="#"></a>
-				<a class="down active" ></a>
-			</div>
-			<section class="hotel">
+			
+			<section class="hotel clearfix">
 				<div class="hotel-image">
 					<img src="img/content/amara.jpg" width="135" height="90" alt="Amara resort">
 				</div>
@@ -98,7 +98,7 @@
 					<div class="rating">Рейтинг: 8,5</div>
 				</div>
 			</section>
-			<section class="hotel">
+			<section class="hotel clearfix">
 				<div class="hotel-image">
 					<img src="img/content/desert.jpg" width="135" height="90" alt="Desert Quail Inn">
 				</div>
@@ -112,16 +112,16 @@
 						<a class="btn-info btn-blue" href="#">Подробнее</a>
 						<a class="btn-book btn-brown" href="#">Забронировать</a>
 					</div>
-					<div class="hotel-rating">
-						<div class="stars">
-							<div class="star"></div>
-							<div class="star"></div>
-						</div>
-						<div class="rating">Рейтинг: 8,9</div>
+				</div>
+				<div class="hotel-rating">
+					<div class="stars">
+						<div class="star"></div>
+						<div class="star"></div>
 					</div>
+					<div class="rating">Рейтинг: 8,9</div>
 				</div>
 			</section>
-			<section class="hotel">
+			<section class="hotel clearfix">
 				<div class="hotel-image">
 					<img src="img/content/villas.jpg" width="135" height="90" alt="Villas at Poco Diablo">
 				</div>
@@ -146,7 +146,7 @@
 				</div>
 			</section>
 
-			<footer class="main-footer">
+			<footer class="footer clearfix">
 				<div class="hashtag"><a href="#">#visitsedona</a></div>
 				<div class="social-btns">
 					<a class="social-btn social-btn-twitter" href="#">Twitter</a>
