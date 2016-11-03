@@ -58,8 +58,6 @@ body {
 }
 /*Шапка*/
 .main-header {
-	padding-left: 72px;
-	padding-right: 72px;
 	position: relative;
 }
 
@@ -117,15 +115,6 @@ ul {
 .reason-row--blue {
 	background-color: #81b3d2;
 }
-
-}
-.reason-to-left {
-	float: left;
-}
-
-.reason-to-right {
-	float: right;
-}
 .reason-image {
 	height: 255px;
 	width:800px;
@@ -173,30 +162,30 @@ ul {
 .main-footer {
 	width: 1200px;
 	min-height: 120px;
-	box-sizing: border-box;
-	padding-left: 72px;
-	padding-right: 72px;
+	font-size: 0px;
 	background-color: rgba(255,255,255,0.9);
 	position: absolute;
 	bottom: 0px;
 	left:0px;
+
 }
 
 .hashtag {
-	width: 240px;
-	float: left;
+	width: 400px;
+	font-size: 14px;
+	display: inline-block;	
 }
 
 .social-btns {
-	width: 150px;
-	margin-left: 212px;
-	margin-left: 212px;
-	float: left;
+	width: 400px;
+	font-size: 14px;
+	display: inline-block;
 }
 
 .footer-copyright {
-	width: 240px;
-	float: right;
+	width: 400px;
+	font-size: 14px;
+	display: inline-block;
 }
 
 /* inner.html*/
@@ -227,22 +216,28 @@ ul {
 
 }
 
+.sort {
+	float: left; 
+}
+
 .found li {
 	display: inline-block;
 	padding-top: 5px;
-	float: left; 
+	margin-right: 20px;	
 }
 
 .found-title {
 	float: left;
+	margin-right: 20px;
 }
 
 .arrows {
+	width: 36px;
 	float: right;
 }
 /* */
 .hotel {
-	height: 151px; /*later will change for min-height */
+	min-height: 151px; /*later will change for min-height */
 	box-sizing: border-box;
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -260,19 +255,19 @@ ul {
 }
 
 .hotel-description {
+	width: 258px;
 	float: left;
 }
 
 .hotel-rating {
+	width: 111px;
 	float: right;
 }
 /* подвал внутренней страницы*/
 .footer {
 	width: 1200px;
 	min-height: 120px;
-	box-sizing: border-box;
-	padding-left: 72px;
-	padding-right: 72px;
+	font-size: 0px;
 	background-color: #fefefe;
 }
 
