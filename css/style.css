@@ -174,18 +174,21 @@ ul {
 	width: 400px;
 	font-size: 14px;
 	display: inline-block;	
+	vertical-align: top;
 }
 
 .social-btns {
 	width: 400px;
 	font-size: 14px;
 	display: inline-block;
+	vertical-align: top;
 }
 
 .footer-copyright {
 	width: 400px;
 	font-size: 14px;
 	display: inline-block;
+	vertical-align: top;
 }
 
 /* inner.html*/
