@@ -1,6 +1,6 @@
 body {
 
-	font-family: "PT Sans","Arial",serif;
+	font-family: "PT Sans","Arial",sans-serif;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: normal; 
@@ -8,6 +8,7 @@ body {
 	color: #000000;
 	text-align: center;
 	margin: 0;
+	background-color: #f2f2f2;
 }
 
 .reasons-title, .reason-title {
@@ -16,9 +17,12 @@ body {
 	
 }
 
-.reasons-description,.reason-description {
-	font-size: 14px;
-	line-height: 26px;
+.reason-description,.reason-title {
+	line-height: 21px;
+}
+
+.search-decription {
+	line-height: 24px;
 }
 
 .search-title {
@@ -54,11 +58,15 @@ body {
 	width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
+	background-color: #ffffff;
+	box-shadow:0 0 9px 0 #dbdbdb;
 	
 }
 /*Шапка*/
 .main-header {
 	position: relative;
+	z-index: 20;
+	box-sizing: border-box;
 }
 
 ul {
@@ -66,10 +74,12 @@ ul {
 	margin:0 0;
 	list-style: none;
 }
+
 .menu-left {
 	width: 20%;
 	min-height:55px;
 	float: left;
+	
 }
 
 .menu-right {
@@ -84,14 +94,44 @@ ul {
 	left: 531px;
 	top: 0px;
 }
-/* промо-текст на фоне гор*/
+
+.main-navigation a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #000000;
+	display: block;
+}
+
+.main-navigation li {
+	box-sizing: border-box;
+	padding-top: 15px;
+	width:;
+	
+
+}
+
+/*-----------------------на фоне гор----------------------*/
 .promo {
 	min-height: 510px;
 	width:100%;
+	position: relative;
+	z-index: 10;
 	box-sizing: border-box;
 	padding-top:77px;
 	margin-bottom: 60px;
 	background-image: url("../img/background/background.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 -55px;
+}
+
+.promo::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	display: block;
+	width: 100%;
+	height: 57px;
+	background-image: url("../img/background/mask.png");
 	background-repeat: no-repeat;
 }
 
@@ -99,7 +139,7 @@ ul {
 	width: 458px;
 	margin:0 auto;
 }
-/* общая высота-ширина */
+/*----------------------- общая высота-ширина------------------------ */
 .reason-row {
 	min-height: 255px;
 }
@@ -108,60 +148,217 @@ ul {
 	float: left;
 }
 
-.reasons-description {
-	margin-bottom: 60px;
+.reasons-title {
+	margin-bottom: 27px;
 }
-
+.reasons-description {
+	margin-bottom: 52px;
+}
+/*-----------------------на голубом фоне---------------------------- */
 .reason-row--blue {
 	background-color: #81b3d2;
 }
+
 .reason-image {
 	height: 255px;
 	width:800px;
+	background-color: #b1beac;
 }
 
-/*жилье,еда,сувениры*/
+.reason-row--blue .reason {
+	color: white;
+}
+
+.reason-town .reason-title {
+	margin-top: 53px;
+	margin-bottom: 23px;
+}
+
+.reason-town .reason-number {
+	margin-bottom: 19px;
+}
+
+.reason-bridge .reason-title {
+	margin-top: 55px;
+	margin-bottom: 22px;
+}
+
+.reason-bridge .reason-number {
+	margin-bottom: 21px;
+}
+
+/*----------------------жилье,еда,сувениры----------------------------*/
 .reason-row--white {
 	min-height: 330px;
-	background-color: #ffffff;
 }
-/*без изображений */
+
+.reason-row--white .reason-title {
+	margin-top: 162px;
+	margin-bottom: 25px;
+}
+
+.reason-row--white .reason-description{
+	margin-bottom: 82px;
+}
+
+/*----------------Фоновые картинки к блокам ------------------ */
+.reason-icon {
+	position: relative;
+}
+.reason-icon--hotel .reason-title::before {
+	content:"";
+	position: absolute;
+	top:61px;
+	left:162px;
+	width:74px;
+	height:72px;
+	background-image: url("../img/icon/house-icon.png");
+	background-repeat: no-repeat;
+}
+
+.reason-icon--food .reason-title::before {
+	content:"";
+	position: absolute;
+	top:61px;
+	left:162px;
+	width:74px;
+	height:72px;
+	background-image: url("../img/icon/burger-icon.png");
+	background-repeat: no-repeat;
+}
+
+.reason-icon--souvenirs .reason-title::before {
+	content:"";
+	position: absolute;
+	top:57px;
+	left: 166px;
+	width:74px;
+	height:76px;
+	background-image: url("../img/icon/present-icon.png");
+	background-repeat: no-repeat;
+}
+
+/*------------------------блоки без изображений----------------- */
 .reason-row--grey {
+	box-sizing: border-box;
+	min-height: 257px;
+	padding-top: 30px;
+	margin-bottom: 60px;
 	background-color: #eeeeee;
-	margin-bottom: 60px
+	
 }
-/* поиск гостриницы*/
+
+.reason-row--grey .reason-title {
+	width: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 23px;
+}
+
+.reason-row--grey .reason-number {
+	margin-bottom: 19px;
+}
+/*--------------- поиск гостриницы-----------------------------*/
 .hotel-search {
 	background-color: #ffffff;
+	margin-top: -60px;
+	padding-top: 26px;
 
 }
-
 .search-description {
-	margin-bottom: 40px;
+	margin-bottom: 43px;
 }
 .search-btn {
 	width: 568px;
 	height: 87px;
-	background-color: #766357;
 	margin:0 auto;
+	font-family: "PT Sans","Arial",sans-serif;
+	font-size: 21px;
+	font-weight: bold;
+	color: white;
+	text-transform: uppercase;
+	background-color: #766357;
+	
 }
 
 .map-content{
 	position: relative;
 }
 
+/*----------------------- ----------------------------- */
 .form {
 	width: 568px;
 	min-height: 395px;
-	background-color: #ffffff;
 	position: absolute;
 	top:0;
 	left:316px;
+	box-sizing: border-box;
+	padding-top: 55px;
+	padding-right: 55px;
+	padding-bottom: 55px;
+	padding-left: 55px;
+	background-color: #ffffff;
 }
-/*футер */
+
+.search-wrap {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 0px;
+}
+
+.search-wrap label {
+	display:inline-block;
+	font-size:14px;
+	font-weight: bold;
+	padding-left: 0px;
+	padding-right:20px;
+}
+
+.search-wrap input {
+	height: 38px;
+	width: 307px;
+	box-sizing: border-box;
+	margin-right: 0px;
+	margin-bottom: 29px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	padding-left: 15px;
+	font-size: 14px;
+	text-transform: uppercase;
+	line-height:26px;
+	color: #000000;
+	border: none;
+	background-color: #f2f2f2;
+
+}
+
+.calendar {
+	height: 38px;
+	width: 40px;
+	display: inline-block;
+	vertical-align: top;
+	border: none;
+	background-color: #f2f2f2;
+	background-image: url("../img/icon/spritesheet.png");
+	background-position:-120px 3px;
+}
+
+.submit-btn {
+	width: 458px;
+	height:58px;
+	display: block;
+	font-family: "PT Sans","Arial",sans-serif;
+	font-size: 21px;
+	font-weight: bold;
+	color: white;
+	text-transform: uppercase;
+	border: none;
+	background-color: #81b3d2;
+}
+/*----------------------- футер --------------------------- */
 .main-footer {
 	width: 1200px;
-	min-height: 120px;
+	min-height: 130px;
 	font-size: 0px;
 	background-color: rgba(255,255,255,0.9);
 	position: absolute;
@@ -273,5 +470,10 @@ ul {
 	font-size: 0px;
 	background-color: #fefefe;
 }
+
+/*Оформление контента*/
+
+
+
 
 
