@@ -6,7 +6,6 @@ body {
 	font-weight: normal; 
 	text-transform: uppercase;
 	color: #000000;
-	text-align: center;
 	margin: 0;
 	background-color: #f2f2f2;
 }
@@ -70,28 +69,37 @@ body {
 }
 
 ul {
-	padding: 0 0;
+	padding: 15px 72px;
 	margin:0 0;
 	list-style: none;
 }
 
 .menu-left {
 	width: 20%;
-	min-height:55px;
+	
 	float: left;
 	
 }
 
 .menu-right {
 	width: 20%;
-	min-height:55px;
+	text-align: right;
 	float: right;
+}
+
+ ul li:nth-child(2) {
+	padding-left: 27px;
+}
+
+ul li:nth-child(4) {
+	padding-right: 33px;
 }
 
 .logo {
 	height: 70px;
 	position: absolute;
-	left: 531px;
+	transform: translateX(-50%);
+	left: 50%;
 	top: 0px;
 }
 
@@ -102,14 +110,6 @@ ul {
 	display: block;
 }
 
-.main-navigation li {
-	box-sizing: border-box;
-	padding-top: 15px;
-	width:;
-	
-
-}
-
 /*-----------------------на фоне гор----------------------*/
 .promo {
 	min-height: 510px;
@@ -118,7 +118,7 @@ ul {
 	z-index: 10;
 	box-sizing: border-box;
 	padding-top:77px;
-	margin-bottom: 60px;
+	margin-bottom: 58px;
 	background-image: url("../img/background/background.jpg");
 	background-repeat: no-repeat;
 	background-position: 0 -55px;
@@ -137,9 +137,20 @@ ul {
 
 .promo-text {
 	width: 458px;
+	display: block;
 	margin:0 auto;
 }
 /*----------------------- общая высота-ширина------------------------ */
+.reasons-title {
+	margin-bottom: 28px;
+}
+.reasons-description {
+	margin-bottom: 52px;
+}
+
+.reasons {
+	text-align: center;
+}
 .reason-row {
 	min-height: 255px;
 }
@@ -148,43 +159,40 @@ ul {
 	float: left;
 }
 
-.reasons-title {
-	margin-bottom: 27px;
+.reason-title {
+	padding-left: 123px;
+	padding-right: 123px;
 }
-.reasons-description {
-	margin-bottom: 52px;
+
+.reason-description {
+	padding-left: 49px;
+	padding-right: 49px;
 }
 /*-----------------------на голубом фоне---------------------------- */
 .reason-row--blue {
 	background-color: #81b3d2;
+	height: 256px;
+	overflow: hidden; 
 }
 
 .reason-image {
-	height: 255px;
+	height: 256px;
 	width:800px;
 	background-color: #b1beac;
 }
+
 
 .reason-row--blue .reason {
 	color: white;
 }
 
-.reason-town .reason-title {
+.reason-row--blue .reason-title {
 	margin-top: 53px;
 	margin-bottom: 23px;
 }
 
-.reason-town .reason-number {
+.reason-row--blue .reason-number {
 	margin-bottom: 19px;
-}
-
-.reason-bridge .reason-title {
-	margin-top: 55px;
-	margin-bottom: 22px;
-}
-
-.reason-bridge .reason-number {
-	margin-bottom: 21px;
 }
 
 /*----------------------жилье,еда,сувениры----------------------------*/
@@ -193,7 +201,7 @@ ul {
 }
 
 .reason-row--white .reason-title {
-	margin-top: 162px;
+	margin-top: 160px;
 	margin-bottom: 25px;
 }
 
@@ -212,7 +220,8 @@ ul {
 	left:162px;
 	width:74px;
 	height:72px;
-	background-image: url("../img/icon/house-icon.png");
+	background-image: url("../img/icon/spritesheet.png");
+	background-position:-119px -15px ;
 	background-repeat: no-repeat;
 }
 
@@ -223,7 +232,8 @@ ul {
 	left:162px;
 	width:74px;
 	height:72px;
-	background-image: url("../img/icon/burger-icon.png");
+	background-image: url("../img/icon/spritesheet.png");
+	background-position:-15px -15px;
 	background-repeat: no-repeat;
 }
 
@@ -234,7 +244,8 @@ ul {
 	left: 166px;
 	width:74px;
 	height:76px;
-	background-image: url("../img/icon/present-icon.png");
+	background-image: url("../img/icon/spritesheet.png");
+	background-position:-222px -16px ;
 	background-repeat: no-repeat;
 }
 
