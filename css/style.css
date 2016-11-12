@@ -221,7 +221,7 @@ ul li:nth-child(4) {
 	width:74px;
 	height:72px;
 	background-image: url("../img/icon/spritesheet.png");
-	background-position:-119px -15px ;
+	background-position:-928px -20px ;
 	background-repeat: no-repeat;
 }
 
@@ -233,7 +233,7 @@ ul li:nth-child(4) {
 	width:74px;
 	height:72px;
 	background-image: url("../img/icon/spritesheet.png");
-	background-position:-15px -15px;
+	background-position:-324px -21px;
 	background-repeat: no-repeat;
 }
 
@@ -245,7 +245,7 @@ ul li:nth-child(4) {
 	width:74px;
 	height:76px;
 	background-image: url("../img/icon/spritesheet.png");
-	background-position:-222px -16px ;
+	background-position:-1411px -21px ;
 	background-repeat: no-repeat;
 }
 
@@ -267,13 +267,14 @@ ul li:nth-child(4) {
 }
 
 .reason-row--grey .reason-number {
-	margin-bottom: 19px;
+	margin-bottom: 18px;
 }
 /*--------------- поиск гостриницы-----------------------------*/
 .hotel-search {
 	background-color: #ffffff;
 	margin-top: -60px;
-	padding-top: 26px;
+	padding-top: 25px;
+	text-align: center;
 
 }
 .search-description {
@@ -289,6 +290,8 @@ ul li:nth-child(4) {
 	color: white;
 	text-transform: uppercase;
 	background-color: #766357;
+	border: 0;
+    outline: 0; 
 	
 }
 
@@ -301,28 +304,31 @@ ul li:nth-child(4) {
 	width: 568px;
 	min-height: 395px;
 	position: absolute;
-	top:0;
-	left:316px;
-	box-sizing: border-box;
+	transform: translateX(-50%);
+    left: 50%;
+    top:0;
+    box-sizing: border-box;
 	padding-top: 55px;
-	padding-right: 55px;
 	padding-bottom: 55px;
+	padding-right: 54px;
 	padding-left: 55px;
 	background-color: #ffffff;
 }
 
 .search-wrap {
+	height: 38px;
 	display: inline-block;
 	vertical-align: top;
 	font-size: 0px;
+	margin-bottom: 29px;
+
 }
 
 .search-wrap label {
-	display:inline-block;
 	font-size:14px;
 	font-weight: bold;
 	padding-left: 0px;
-	padding-right:20px;
+	padding-right:19px;
 }
 
 .search-wrap input {
@@ -351,25 +357,64 @@ ul li:nth-child(4) {
 	border: none;
 	background-color: #f2f2f2;
 	background-image: url("../img/icon/spritesheet.png");
-	background-position:-120px 3px;
+	background-position:-427px -13px;
+}
+
+.amount {
+	width: 227px;
+}
+.amount input {
+	width: 38px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.amount label {
+	margin-right: 20px;
+}
+
+.minus {
+	width:38px;
+	height: 38px;
+	border: 0;
+	outline: 0;
+	
+	background-color: #f2f2f2;
+	background-image: url("../img/icon/spritesheet.png");
+	background-position:-1190px -4px;
+}
+
+.plus {
+	width:38px;
+	height: 38px;
+	
+	border: 0;
+	outline: 0;
+	background-color: #f2f2f2;
+	background-image: url("../img/icon/spritesheet.png");
+	background-position:-1350px -8px;
 }
 
 .submit-btn {
 	width: 458px;
 	height:58px;
 	display: block;
+	margin-top: 23px;
 	font-family: "PT Sans","Arial",sans-serif;
 	font-size: 21px;
 	font-weight: bold;
 	color: white;
 	text-transform: uppercase;
-	border: none;
+	border:0;
+	outline:0;
 	background-color: #81b3d2;
 }
 /*----------------------- футер --------------------------- */
 .main-footer {
 	width: 1200px;
 	min-height: 130px;
+	box-sizing: border-box;
+	padding-top: 36px;
 	font-size: 0px;
 	background-color: rgba(255,255,255,0.9);
 	position: absolute;
@@ -381,8 +426,16 @@ ul li:nth-child(4) {
 .hashtag {
 	width: 400px;
 	font-size: 14px;
+	padding-top: 10px;
 	display: inline-block;	
 	vertical-align: top;
+}
+
+.hashtag a {
+	text-decoration: none;
+	color: #000000;
+	font-size: 21px;
+	font-weight:bold;
 }
 
 .social-btns {
@@ -392,11 +445,47 @@ ul li:nth-child(4) {
 	vertical-align: top;
 }
 
+.social-btn {
+	display: inline-block;
+	width: 46px;
+	height: 48px;
+	margin: 0 1px;
+	font-size: 0;
+	vertical-align: top;
+	text-decoration: none;
+	background-image:  url("../img/icon/spritesheet.png");
+	background-position: 
+	background-repeat: no-repeat;
+	background-color: #81b3d2;
+}
+
+.social-btn-twitter {
+	background-image: url("../img/icon/spritesheet.png");
+	background-position: -1680px -4px;
+}
+
+.social-btn-facebook {
+	background-image: url("../img/icon/spritesheet.png");
+	background-position: -861px -7px;
+}
+
+.social-youtube {
+	background-image: url("../img/icon/spritesheet.png");
+	background-position: -1032px -5px;
+}
+
 .footer-copyright {
 	width: 400px;
 	font-size: 14px;
 	display: inline-block;
 	vertical-align: top;
+	margin-top: -13px;
+}
+
+.academy-logo {
+	position: relative;
+	top:18px;
+	margin-left: 4px;
 }
 
 /* inner.html*/
