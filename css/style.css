@@ -507,17 +507,12 @@ ul li:nth-child(4) {
 	background-color: #81b3d2;
 }
 
-.social-btn-twitter {
+.social-twitter {
 	background-image: url("../img/icon/spritesheet.png");
 	background-position: -1680px -4px;
 }
 
-.social-btn-twitter:focus {
-	background-color: #5496bd;
-	color: rgba(255,255,255,0.4);
-}
-
-.social-btn-facebook {
+.social-facebook {
 	background-image: url("../img/icon/spritesheet.png");
 	background-position: -861px -7px;
 }
@@ -525,6 +520,18 @@ ul li:nth-child(4) {
 .social-youtube {
 	background-image: url("../img/icon/spritesheet.png");
 	background-position: -1032px -5px;
+}
+
+.social-twitter:hover,
+.social-facebook:hover,
+.social-youtube:hover {
+	background-color: #669ec0;
+}
+
+.social-twitter:focus,
+.social-facebook:focus,
+.socail-youtube:focus {
+	background-color: #5496bd;
 }
 
 .footer-copyright {
