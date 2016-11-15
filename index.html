@@ -3,15 +3,15 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Седона</title>
-		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/normalize.css">
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 	<body>
 		<div class="wrapper">
 			<header class="main-header" >
 				<nav class="main-navigation">
-					<ul class="clearfix">
+					<ul class="main-menu clearfix">
 						<li class="menu-left"><a href=#>Информация</a></li>
 						<li class="menu-left"><a href=#>Фото и видео</a></li>
 						<li class="menu-right"><a href=inner.html>Гостиницы</a></li>
@@ -96,24 +96,30 @@
  							<div class="search-wrap">
  								<label for="check-in-date">Дата заезда:</label>
  								<input id="check-in-date" type="text" name="date" placeholder="24 апреля 2016">
- 								<button class="calendar" type="button" "></button>
+ 								<button class="calendar" type="button"></button>
  							</div>
  							<div class="search-wrap">
  								<label for="check-out-date">Дата выезда:</label>
  								<input id="check-out-date" type="text" name="date" placeholder="4 июля 2016">
  								<button class="calendar" type="button"></button>
  							</div>
- 							<div class="search-wrap amount adults">
- 								<label for="adults">Взрослые:</label>
- 								<button class="minus" type="button"></button>
- 								<input id="adults" type="text" name="number" value="2">
- 								<button class="plus" type="button"></button>
- 							</div>
- 							<div class="search-wrap amount children">
- 								<label for="children">Дети:</label>
- 								<button class="minus" type="button"></button>
- 								<input id="children" type="text" name="number" value="0">
- 								<button class="plus" type="button"></button>
+ 							<div class="search-wrap ">
+ 								<div class="amount-adults">
+ 									<label for="adults">Взрослые:</label>
+ 									<div class="minus-plus">
+ 										<button class="minus" type="button"></button>
+ 										<input id="adults" type="text" name="number" value="2">
+ 										<button class="plus" type="button"></button>
+ 									</div>
+ 								</div>
+ 								<div class="amount-children">
+ 									<label for="children">Дети:</label>
+ 									<div class="minus-plus">
+ 										<button class="minus" type="button"></button>
+ 										<input id="children" type="text" name="number" value="0">
+ 										<button class="plus" type="button"></button>
+ 									</div>
+ 								</div>
  							</div>
  							<button class="submit-btn" type="submit">Найти</button>
  						</form>
@@ -127,9 +133,7 @@
  						</div>
  						<div class="footer-copyright">
  						Website by
- 							<a class="academy-logo" href="https://htmlacademy.ru">
- 								
- 							</a>
+ 							<a class="academy-logo" href="https://htmlacademy.ru"></a>
  						</div>
  					</footer>
  				</div>
@@ -137,59 +141,4 @@
  		</div>
  	</body>
 		
-			<!-- 
-				<div class="hotel-search">
-				<h3 class="search-title">Заинтересовались?</h3>
-				<p class="search-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-				<div class="search-form">
-					<button class="search-btn" type="button">Поиск гостиницы в Седоне</button>
-					<div class="form">
-						<form action="#" method="post">
-							<div class="search-wrap">
-								<label for="check-in-date">Дата заезда</label>
-								<input id="check-in-date" type="text" name="date" placeholder="24 апреля 2016">
-								<button class="calendar" type="button" "></button>
-							</div>
-							<div class="search-wrap">
-								<label for="check-out-date">Дата выезда</label>
-								<input id="check-out-date" type="text" name="date" placeholder="4 июля 2016">
-								<button class="calendar" type="button"></button>
-							</div>
-							<div class="search-wrap amount">
-								<label for="adults">Взрослые</label>
-								<button class="minus" type="button"></button>
-								<input id="adults" type="text" name="number" value="2">
-								<button class="plus" type="button"></button>
-							</div>
-							<div class="search-wrap amount">
-								<label for="children">Дети</label>
-								<button class="minus" type="button"></button>
-								<input id="children" type="text" name="number" value="0">
-								<button class="plus" type="button"></button>
-							</div>
-							<button class="submit-btn" type="submit">Найти</button>
-						</form>
-					</div>
-					<div class="map">
-						<img src="img/content/map.jpg" width="1200" height="593" alt="map">
-					</div>
-				</div>
-
-				<footer class="main-footer clearfix">
-					<div class="hashtag"><a href="#">#visitsedona</a></div>
-					<div class="social-btns">
-						<a class="social-btn social-btn-twitter" href="#">Twitter</a>
-						<a class="social-btn social-btn-facebook" href="#">Facebook</a>
-						<a class="social-btn social-youtube" href="#">Youtube</a>
-					</div>
-					<div class="footer-copyright">
-					Website by
-						<a href="https://htmlacademy.ru">
-							<img src="img/logo/academy-logo.png">
-						</a>
-					</div>
-				</footer>
-			</div>
-		</div>
-	</body>
 			

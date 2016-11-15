@@ -3,15 +3,15 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Седона</title>
-		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/normalize.css">
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 	<body>
 		<div class="wrapper">
 			<header class="main-header">
 				<nav class="main-navigation">
-					<ul class="clearfix">
+					<ul class="main-menu clearfix">
 						<li class="menu-left"><a href=#>Информация</a></li>
 						<li class="menu-left"><a href=#>Фото и видео</a></li>
 						<li class="menu-right"><a class="active">Гостиницы</a></li>
@@ -31,14 +31,17 @@
 						<div class="filter-name">Инфраструктура</div>
 						<div class="filter-point">
 							<input id="pool" type="checkbox" name="pool" checked >
+							<span class="checkbox-indicator"></span>
 							<label for="pool">Бассейн</label>
 						</div>
 						<div class="filter-point">
 							<input id="parking" type="checkbox" name="parking">
+							<span class="checkbox-indicator"></span>
 							<label for="parking">Парковка</label>
 						</div>
 						<div class="filter-point">
 							<input id="wifi" type="checkbox" name="wifi">
+							<span class="checkbox-indicator"></span>
 							<label for="wifi">Wi-fi</label>
 						</div>
 					</div>
@@ -46,24 +49,41 @@
 						<div class="filter-name">Тип жилья</div>
 						<div class="filter-point">
 							<input id="hotel" type="checkbox" name="hotel" checked>
-<							<label for="hotel">Гостиница</label>
+							<span class="checkbox-indicator"></span>			
+							<label for="hotel">Гостиница</label>
 						</div>
 						<div class="filter-point">
 							<input id="motel" type="checkbox" name="motel" checked>
+							<span class="checkbox-indicator"></span>
 							<label for="motel">Мотель</label>
 						</div>
 						<div class="filter-point">
 							<input id="apptm" type="checkbox" name="appartments" checked>
+							<span class="checkbox-indicator"></span>
 							<label for="apptm">Апартаменты</label>
 						</div>
 					</div>
-					<button class="btn" type="submit">Показать</button>
+					<div class="filter-range">
+						<div class="filter-range-title">Стоимость в сутки (р):</div>
+						<div class="price-controls">
+							<label class="min-price">от <input type="text" name="min-price" value="0"></label>
+							<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+						</div>
+						<div class="range-controls">
+							<div class="scale">
+								<div class="bar"></div>
+							</div>
+							<div class="range-toggle range-toggle-min"></div>
+        					<div class="range-toggle range-toggle-max"></div>
+						</div>
+						<button class="btn-transparent" type="submit">Показать</button>
+					</div>
 				</form>
 			</div>
 			<div class="found clearfix">
-				<div class="found-title">Найдено:3</div>
+				<div class="found-title">Найдено: 3</div>
 				<ul class="sort">
-					<li class="sort">Сортировка:</li>
+					<li class="sort-title">Сортировка:</li>
 					<li><a class="active">По цене</a></li>
 					<li><a href="#">По типу</a></li>
 					<li><a href="#">По рейтингу</a></li>
@@ -79,19 +99,18 @@
 					<img src="img/content/amara.jpg" width="135" height="90" alt="Amara resort">
 				</div>
 				<div class="hotel-description">
-					<a class="hotel-title" href="#">Amara resort&spa</a>
+					<a class="hotel-title" href="#">Amara resort & spa</a>
 					<div class="hotel-features">
 						<div class="hotel-type">Гостиница</div>
 						<div class="hotel-price">От 3500 р.</div>
 					</div>
 					<div class="btns">
-						<a class="btn-info btn-blue" href="#">Подробнее</a>
-						<a class="btn-book btn-brown" href="#">Забронировать</a>
+						<a class="btn-more-info" href="#">Подробнее</a>
+						<a class="btn-book" href="#">Забронировать</a>
 					</div>
 				</div>
 				<div class="hotel-rating">
 					<div class="stars">
-						<div class="star"></div>
 						<div class="star"></div>
 						<div class="star"></div>
 						<div class="star"></div>
@@ -111,8 +130,8 @@
 						<div class="hotel-price">От 2500 р.</div>
 					</div>
 					<div class="btns">
-						<a class="btn-info btn-blue" href="#">Подробнее</a>
-						<a class="btn-book btn-brown" href="#">Забронировать</a>
+						<a class="btn-more-info" href="#">Подробнее</a>
+						<a class="btn-book" href="#">Забронировать</a>
 					</div>
 				</div>
 				<div class="hotel-rating">
@@ -134,8 +153,8 @@
 						<div class="hotel-price">От 4000 р.</div>
 					</div>
 					<div class="btns">
-						<a class="btn-info btn-blue" href="#">Подробнее</a>
-						<a class="btn-book btn-blue" href="#">Забронировать</a>
+						<a class="btn-more-info" href="#">Подробнее</a>
+						<a class="btn-book" href="#">Забронировать</a>
 					</div>
 				</div>
 				<div class="hotel-rating">
@@ -151,15 +170,13 @@
 			<footer class="footer clearfix">
 				<div class="hashtag"><a href="#">#visitsedona</a></div>
 				<div class="social-btns">
-					<a class="social-btn social-btn-twitter" href="#">Twitter</a>
-					<a class="social-btn social-btn-facebook" href="#">Facebook</a>
+					<a class="social-btn social-twitter" href="#">Twitter</a>
+					<a class="social-btn social-facebook" href="#">Facebook</a>
 					<a class="social-btn social-youtube" href="#">Youtube</a>
 				</div>
 				<div class="footer-copyright">
 					Website by
-					<a href="https://htmlacademy.ru">
-						<img src="img/logo/academy-logo.png">
-					</a>
+					<a class="academy-logo" href="https://htmlacademy.ru"></a>
 				</div>
 			</footer>
 		</div>
