@@ -375,6 +375,14 @@ ul {
 	box-shadow:0 5px 9px 0 #dbdbdb;
 }
 
+.form-hide {
+	display: none;
+}
+
+.form-show {
+	display: block;
+}
+
 .search-wrap {
 	position: relative;
 	display: inline-block;

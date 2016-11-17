@@ -91,12 +91,12 @@
  					<form action="#" method="post">
  						<div class="search-wrap">
  							<label for="check-in-date">Дата заезда:</label>
- 							<input id="check-in-date" type="text" name="date" placeholder="24 апреля 2016">
+ 							<input id="check-in-date" type="text" name="v1" placeholder="24 апреля 2016">
  							<button class="calendar" type="button"></button>
  						</div>
  						<div class="search-wrap">
  							<label for="check-out-date">Дата выезда:</label>
- 							<input id="check-out-date" type="text" name="date" placeholder="4 июля 2016">
+ 							<input id="check-out-date" type="text" name="v2" placeholder="4 июля 2016">
  							<button class="calendar" type="button"></button>
  						</div>
  						<div class="search-wrap ">
@@ -104,7 +104,7 @@
  								<label for="adults">Взрослые:</label>
  								<div class="minus-plus">
  									<button class="minus" type="button"></button>
- 									<input id="adults" type="text" name="number" value="2">
+ 									<input id="adults" type="text" name="v3" value="2">
  									<button class="plus" type="button"></button>
  								</div>
  							</div>
@@ -112,7 +112,7 @@
  								<label for="children">Дети:</label>
  								<div class="minus-plus">
  									<button class="minus" type="button"></button>
- 									<input id="children" type="text" name="number" value="0">
+ 									<input id="children" type="text" name="v4" value="0">
  									<button class="plus" type="button"></button>
  								</div>
  							</div>
@@ -120,12 +120,10 @@
  						<button class="submit-btn" type="submit">Найти</button>
  					</form>
  				</div>
- 				<div class="map-content">
- 					<div class="map">
- 						<img src="img/content/map.jpg" width="1200" height="593" alt="map">
- 					</div>	
- 				</div>
- 			</div>
+ 				<div class="map">
+ 					<img src="img/content/map.jpg" width="1200" height="593" alt="map">
+ 				</div>	
+			</div>
  			<footer class="footer main-footer clearfix">
  					<div class="hashtag"><a href="#">#visitsedona</a></div>
  						<div class="social-btns">
@@ -141,6 +139,19 @@
  				</div>
  			</div>
  		</div>
+ 		<script>
+ 			var form = document.querySelector(".form");
+ 			var open = document.querySelector(".search-btn");
+
+ 			form.classList.add("form-hide");
+
+ 			open.addEventListener("click",
+ 				function(event) {
+ 					event.preventDefault();
+ 					form.classList.add("form-show")
+ 				});
+ 			
+ 		</script>
  	</body>
-		
+ 	
 			
