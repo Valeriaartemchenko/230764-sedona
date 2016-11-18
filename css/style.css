@@ -70,8 +70,11 @@ body {
 	box-sizing: border-box;
 }
 
-ul {
-	padding: 15px 72px;
+.main-header ul {
+	padding-top: 14px;
+	padding-bottom:15px;
+	padding-left: 72px;
+	padding-right:72px;
 	margin:0 0;
 	list-style: none;
 }
@@ -143,7 +146,7 @@ ul {
 
 /*-----------------------на фоне гор----------------------*/
 .promo {
-	min-height: 510px;
+	min-height: 508px;
 	width:100%;
 
 	position: relative;
@@ -151,7 +154,7 @@ ul {
 
 	box-sizing: border-box;
 	padding-top:77px;
-	margin-bottom: 58px;
+	margin-bottom: 60px;
 
 	background-image: url("../img/background/background.jpg");
 	background-repeat: no-repeat;
@@ -183,7 +186,7 @@ ul {
 }
 /*----------------------- общая высота-ширина------------------------ */
 .reasons-title {
-	margin-bottom: 30px;
+	margin-bottom: 28px;
 }
 .reasons-description {
 	margin-bottom: 50px;
@@ -624,7 +627,6 @@ ul {
 }
 
 .map {
-	display: block;
 	height: 593px;
 	overflow: hidden;
 	background-color: #cadca8;
