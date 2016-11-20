@@ -100,7 +100,8 @@ body {
 	position: absolute;
 	left: 50%;
 	top: 0px;
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
 }
 
 .main-navigation a {
@@ -159,7 +160,8 @@ body {
 	content: "";
 	position: absolute;
 	left: 50%;
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
 	bottom: 0;
 
 	display: block;
@@ -357,7 +359,8 @@ body {
 	min-height: 395px;
 
 	position: absolute;
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
     left: 50%;
     top:290px;
 
@@ -375,21 +378,40 @@ body {
 	display: none;
 }
 
-@keyframes popup {
+@-webkit-keyframes popup {
 	0% {
-		transform: translate(-50%, -700px);
+		-webkit-transform: translate(-50%, -700px);
+		        transform: translate(-50%, -700px);
 	}
 	50% {
-		transform: translateY(-50%, -350px);
+		-webkit-transform: translateY(-50%, -350px);
+		        transform: translateY(-50%, -350px);
 	}
 	100% {
-		transform: translate(-50%, 0);
+		-webkit-transform: translate(-50%, 0);
+		        transform: translate(-50%, 0);
+	}
+}
+
+@keyframes popup {
+	0% {
+		-webkit-transform: translate(-50%, -700px);
+		        transform: translate(-50%, -700px);
+	}
+	50% {
+		-webkit-transform: translateY(-50%, -350px);
+		        transform: translateY(-50%, -350px);
+	}
+	100% {
+		-webkit-transform: translate(-50%, 0);
+		        transform: translate(-50%, 0);
 	}
 }
 
 .form-show {
 	display: block;
-	animation: popup 1s;
+	-webkit-animation: popup 1s;
+	        animation: popup 1s;
 }
 
 .search-wrap {
@@ -897,7 +919,8 @@ label:hover::before {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	        transform: translate(-50%,-50%);
 
 	width: 2px;
 	height: 22px;
@@ -1277,7 +1300,6 @@ label:hover::before {
 
 	background-color: #f2f2f2;
 }
-/* подвал внутренней страницы*/
 
 
 
