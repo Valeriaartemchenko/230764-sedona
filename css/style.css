@@ -199,8 +199,8 @@ body {
 }
 
 .reason-title {
-	padding-left: 123px;
-	padding-right: 123px;
+	padding-left: 30.75%;
+    padding-right: 30.75%;
 }
 
 .reason-description {
@@ -259,7 +259,9 @@ body {
 	content:"";
 	position: absolute;
 	top:61px;
-	left:162px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
 
 	width:74px;
 	height:72px;
@@ -273,7 +275,9 @@ body {
 	content:"";
 	position: absolute;
 	top:61px;
-	left:162px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform:translateX(-50%);
 
 	width:74px;
 	height:72px;
@@ -287,9 +291,11 @@ body {
 	content:"";
 	position: absolute;
 	top:57px;
-	left: 166px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
 
-	width:74px;
+	width:67px;
 	height:76px;
 
 	background-image: url("../img/icon/spritesheet.png");
@@ -830,7 +836,7 @@ body {
 .filter-colomn {
 	width: 140px;
 
-	margin-right: 115px;
+	margin-right: 10.890151%;
 
 	text-align: left;
 	float: left;
@@ -1149,8 +1155,8 @@ label:hover::before {
 	box-sizing: border-box;
 	padding-top: 25px;
 	padding-bottom: 30px;
-	padding-left: 72px;
-	padding-right: 72px;
+	padding-left: 6%;
+	padding-right: 6%;
 
 	border-bottom: 1px solid #e5e5e5;
 

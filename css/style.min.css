@@ -177,8 +177,8 @@ body {
 }
 
 .reason-title {
-    padding-left: 123px;
-    padding-right: 123px
+    padding-left: 30.75%;
+    padding-right: 30.75%
 }
 
 .reason-description {
@@ -231,7 +231,9 @@ body {
     content: "";
     position: absolute;
     top: 61px;
-    left: 162px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
     width: 74px;
     height: 72px;
     background-image: url(../img/icon/spritesheet.png);
@@ -245,7 +247,7 @@ body {
 
 .reason-icon--souvenirs .reason-title::before {
     top: 57px;
-    left: 166px;
+    width: 67px;
     height: 76px;
     background-position: -1411px -21px
 }
@@ -691,7 +693,7 @@ body {
 
 .filter-colomn {
     width: 140px;
-    margin-right: 115px;
+    margin-right: 10.890151%;
     text-align: left;
     float: left
 }
@@ -950,7 +952,7 @@ input[type=checkbox] {
 .hotel {
     min-height: 151px;
     box-sizing: border-box;
-    padding: 25px 72px 30px;
+    padding: 25px 6% 30px;
     border-bottom: 1px solid #e5e5e5
 }
 
