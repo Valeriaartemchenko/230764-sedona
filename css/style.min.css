@@ -131,10 +131,10 @@ body {
     box-sizing: border-box;
     padding-top: 77px;
     margin-bottom: 60px;
-    background-position: 0 -55px;
     background-color: #2f444b;
     position: relative;
-    background-image: url(../img/background/background.jpg)
+    background-image: url(../img/background/background.jpg);
+    background-position: 0 -55px
 }
 
 .promo::after {
@@ -146,7 +146,8 @@ body {
     bottom: 0;
     display: block;
     height: 57px;
-    background-image: url(../img/background/mask.png)
+    background-image: url(../img/background/mask.png);
+    background-position: center
 }
 
 .promo-text {
@@ -396,14 +397,14 @@ body {
 
 .search-wrap input:hover {
     background-color: #ebebeb;
-    border: 2px solid #ebebeb
+    border: 2px solid #ebebeb;
+    outline: 0
 }
 
 .search-wrap input:focus {
-    padding-top: 5px;
-    padding-bottom: 5px;
     background-color: #fff;
-    border: 2px solid #e5e5e5
+    border: 2px solid #e5e5e5;
+    outline: 0
 }
 
 .search-wrap input::-webkit-input-placeholder {
@@ -686,13 +687,13 @@ body {
 
 .filters {
     box-sizing: border-box;
-    padding: 28px 6% 18px;
+    padding: 27px 6% 18px;
     background-image: url(../img/background/background-filtered.jpg);
     background-color: #2f414d
 }
 
 .filter-colomn {
-    width: 140px;
+    width: 13.257575%;
     margin-right: 10.890151%;
     text-align: left;
     float: left
@@ -707,7 +708,7 @@ body {
     position: relative;
     padding-top: 12px;
     padding-left: 40px;
-    padding-bottom: 14px;
+    padding-bottom: 13px;
     line-height: 21px
 }
 
@@ -735,28 +736,28 @@ input[type=checkbox] {
 }
 
 .filter-range {
-    width: 330px;
+    min-width: 235px;
+    max-width: 31.25%;
     float: right
 }
 
 .filter-range-title {
     margin-bottom: 9px;
+    padding-left: 3px;
     font-weight: 700;
     font-size: 16px;
     line-height: 21px
 }
 
-.price-controls,.range-controls {
-    position: relative;
-    margin-left: 13px
-}
-
 .price-controls {
-    height: 36px;
+    width: 95.75%;
+    position: relative;
+    height: 32px;
+    margin-left: 3.939393%;
+    margin-bottom: 20px;
     font-size: 0;
     border: 2px solid #fff;
-    border-radius: 2px;
-    margin-bottom: 20px
+    border-radius: 2px
 }
 
 .price-controls::after {
@@ -773,22 +774,28 @@ input[type=checkbox] {
 
 .found li,.price-controls label {
     display: inline-block;
-    vertical-align: top
+    vertical-align: top;
+    padding-top: 6px
 }
 
 .price-controls label {
     font-size: 14px;
-    line-height: 38px;
+    line-height: 21px;
     cursor: pointer
 }
 
-.price-controls .max-price,.price-controls .min-price {
-    width: 90px;
-    padding-left: 65px
+.price-controls .min-price {
+    width: 28.484848%;
+    padding-left: 20.5%
+}
+
+.price-controls .max-price {
+    width: 28.484848%;
+    padding-left: 18.5%
 }
 
 .price-controls input {
-    width: 50px;
+    width: 40px;
     margin: 0;
     color: inherit;
     font: inherit;
@@ -797,6 +804,8 @@ input[type=checkbox] {
 }
 
 .range-controls {
+    position: relative;
+    margin-left: 13px;
     margin-bottom: 32px
 }
 
@@ -838,7 +847,7 @@ input[type=checkbox] {
 .btn-transparent {
     display: block;
     margin: 0 auto;
-    padding: 6px 35px;
+    padding: 6px 34px;
     background-color: transparent;
     border: 2px solid #fff;
     border-radius: 2px;
@@ -876,7 +885,6 @@ input[type=checkbox] {
 }
 
 .found li {
-    padding-top: 6px;
     margin-right: 29px
 }
 
