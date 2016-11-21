@@ -736,8 +736,7 @@ input[type=checkbox] {
 }
 
 .filter-range {
-    min-width: 235px;
-    max-width: 31.25%;
+    width: 31.25%;
     float: right
 }
 
@@ -795,7 +794,7 @@ input[type=checkbox] {
 }
 
 .price-controls input {
-    width: 40px;
+    width: 55%;
     margin: 0;
     color: inherit;
     font: inherit;
