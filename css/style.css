@@ -882,6 +882,13 @@ label:hover::before{
 	background-position: -686px -20px;
 }
 
+.filter-colomn input[type="checkbox"]:disabled +
+label::before{
+	background-image: url("../img/icon/spritesheet.png");
+	background-position: -624px -20px;
+}
+
+
 .filter-colomn input[type="checkbox"]:checked +
 label::before {
 	background-image: url("../img/icon/spritesheet.png");
@@ -892,6 +899,12 @@ label::before {
 label:hover::before {
 	background-image: url("../img/icon/spritesheet.png");
 	background-position: -748px -20px;
+}
+
+.filter-colomn input[type="checkbox"]:checked:disabled +
+label::before {
+	background-image: url("../img/icon/spritesheet.png");
+	background-position: -814px -20px;
 }
 /*--------------------------ползунки-------------------------*/
 .filter-range {
